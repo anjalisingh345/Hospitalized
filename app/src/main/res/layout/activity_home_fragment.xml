@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="80dp"
+            android:orientation="vertical">
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/inputlName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:borderColor="@color/black"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@android:color/black"
+                    android:drawableTint="@android:color/black"
+                    android:hint="Full Name"
+                    android:gravity="bottom"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="15dp" />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/inputgender"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:padding="16dp"
+                app:borderColor="@color/black"
+                app:borderWidth="2dp"
+                android:background="@drawable/spinnerbg"
+                app:cornerRadius="8dp">
+                <Spinner
+                    android:id="@+id/genderspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="5dp"
+                    android:gravity="bottom"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:inputType="text"/>
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/inputlcontact"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:borderColor="@color/black"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@android:color/black"
+                    android:drawableTint="@android:color/black"
+                    android:hint="Contact"
+                    android:inputType="phone"
+                    android:gravity="bottom"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="15dp" />
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:text="DOB:"></TextView>
+                <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                    android:id="@+id/inputldate"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    app:borderColor="@color/black"
+                    app:borderWidth="2dp"
+                    app:cornerRadius="8dp">
+
+
+                    <EditText
+                        android:id="@+id/Date"
+                        android:layout_width="67dp"
+                        android:layout_height="35dp"
+                        android:backgroundTint="@android:color/black"
+                        android:drawableTint="@android:color/black"
+                        android:hint="Date"
+                        android:inputType="date"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="15dp"></EditText>
+
+                </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+                <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                    android:id="@+id/inputlmonth"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    app:borderColor="@color/black"
+                    android:layout_marginLeft="12dp"
+                    app:borderWidth="2dp"
+                    app:cornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/month"
+                    android:layout_width="67dp"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@android:color/black"
+                    android:drawableTint="@android:color/black"
+                    android:hint="Month"
+                    android:inputType="date"
+                    android:gravity="bottom"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="15dp"></EditText>
+                </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+                <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                    android:id="@+id/inputlyear"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    app:borderColor="@color/black"
+                    app:borderWidth="2dp"
+                    app:cornerRadius="12dp">
+
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_width="67dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"
+                    android:gravity="bottom"
+                    android:hint="Year"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:inputType="date"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:drawableTint="@android:color/black"
+                    android:backgroundTint="@android:color/black" >
+                </EditText>
+
+                </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            </LinearLayout>
+
+
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/inputladress"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:borderColor="@color/black"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@android:color/black"
+                    android:drawableTint="@android:color/black"
+                    android:hint="Adress"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:gravity="bottom"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="15dp" />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                    android:id="@+id/inputlcity"
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginTop="15dp"
+                    app:borderColor="@color/black"
+                    app:borderWidth="2dp"
+                    app:cornerRadius="8dp">
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:gravity="bottom"
+                        android:backgroundTint="@android:color/black"
+                        android:drawableTint="@android:color/black"
+                        android:hint="city"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="15dp" />
+                </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+                <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                    android:id="@+id/inputlstate"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    app:borderColor="@color/black"
+                    app:borderWidth="2dp"
+                    app:cornerRadius="8dp">
+
+                    <EditText
+                        android:id="@+id/state"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@android:color/black"
+                        android:drawableTint="@android:color/black"
+                        android:hint="State"
+                        android:inputType="text"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="15dp" />
+                </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            </LinearLayout>
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/inputlEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="16dp"
+                app:borderColor="@color/black"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@android:color/black"
+                    android:drawableTint="@android:color/black"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="15dp" />
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            <TextView
+                android:id="@+id/facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Have you previously take our facility -"
+                android:textColor="@color/black"
+                android:textSize="15dp"></TextView>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facility"
+                android:backgroundTint="@color/colorAccent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="No"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"></RadioButton>
+            </RadioGroup>
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/spinnercontainer"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:padding="16dp"
+                app:borderColor="@color/black"
+                app:borderWidth="2dp"
+                android:background="@drawable/spinnerbg"
+                app:cornerRadius="8dp">
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="5dp"
+                    android:gravity="bottom"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:inputType="text"/>
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/inputleditTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginTop="15dp"
+                app:borderColor="@color/black"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:backgroundTint="@android:color/black"
+                    android:drawableTint="@android:color/black"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:hint="Your problem"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="15dp" />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+<TextView
+    android:layout_width="70dp"
+    android:layout_height="40dp"
+    android:text="Photo"
+   android:gravity="bottom"
+    android:textSize="15dp"
+
+    android:textColor="@color/black"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:text="Upload"></Button>
+
+
+                    <Button
+                        android:id="@+id/Take"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:text="Take Photo "></Button>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/photo"
+                     ></ImageView>
+                </LinearLayout>
+               </LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:id="@+id/submit"
+    android:text="submit"
+    android:textSize="15dp"
+    android:textColor="@color/white"
+    android:textAlignment="center"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/buttonbg"
+    ></Button>
+        </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
